@@ -46,6 +46,7 @@ class ArtifactsImporter: ConfigurationHandler {
       val rootElement = type.createRootElement(name)
       populateArtifact(project, rootElement, artifactConfig)
       artifact.rootElement = rootElement
+      modifiableModel.commit()
     }
   }
 
